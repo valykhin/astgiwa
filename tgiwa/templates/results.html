@@ -1,0 +1,57 @@
+{% extends 'base_to_email.html' %}
+{% load staticfiles %}
+{% load tz %}
+{% block head_ext %}
+{% endblock head_ext %}
+{% block content %}
+<div class="container">
+    <div class="header clearfix">
+        <h3 class="text">АСТГИВ - Автоматизированная Система Тестирования Графического Интерфейса Веб-приложений</h3>
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation"><a href="/">Главная</a></li>
+                <li role="presentation"><a href="/request_for_test/">Подать заявку на тестирование</a></li>
+                <li role="presentation"><a href="http://getbootstrap.com/examples/jumbotron-narrow/#">О системе</a></li>
+                <li role="presentation"><a href="http://getbootstrap.com/examples/jumbotron-narrow/#">Контакты</a></li>
+                <li role="presentation"><a href="/admin/">Войти</a></li>
+            </ul>
+        </nav>
+    </div>
+    {% if test_request %}
+    <div class="page-header"><h2>Результаты тестирования по запросу № {{ test_request.id }}</h2></div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Страница</th>
+            <th>Операционная система</th>
+            <th>Браузеры</th>
+            <th>Разрешения</th>
+            <th>Дефекты</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for result in results %}
+            <tr>
+                <td>{{ result.test.url }}</td>
+                <td>{{ result.test.test_configuration.browser.operating_system }}</td>
+                <td>{{ result.test.test_configuration.browser }}</td>
+                <td>{{ result.test.test_configuration.resolution }}</td>
+                <td>
+                    {% if result.screenshot %}
+                    <a href="{% static "tgiwa/screenshots/" %}">{{ result.defect_description }}</a>
+                    {% else %}
+                    {{ result.defect_description }}
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>Такого запроса не существует</p>
+    {% endif %}
+    </div>
+    <footer class="footer">
+        <p></p>
+    </footer>
+    {% endblock content %}

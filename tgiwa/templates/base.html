@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>Автоматизированная Система Тестирования Графического Интерфейса Веб Приложений</title>
+    <link rel="stylesheet" type="text/css" href="{% static "tgiwa/css/bootstrap.min.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "tgiwa/css/bootstrap-multiselect.css" %}"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static "tgiwa/js/bootstrap.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "tgiwa/js/bootstrap-multiselect.js" %}"></script>
+    <script type="text/javascript" src="{% static "tgiwa/js/additional.js" %}"></script>
+    <script type="text/javascript">
+         $(document).ready(function() {$('#{{ form.browsers.auto_id }}').multiselect({includeSelectAllOption: true,
+    nonSelectedText: 'Ничего не выбрано',
+    allSelectedText: 'Все выбраны',
+    selectAllText: 'Выбрать все'});});
+$(document).ready(function() {$('#{{ form.resolutions.auto_id }}').multiselect({includeSelectAllOption: true,
+    nonSelectedText: 'Ничего не выбрано',
+    allSelectedText: 'Все выбраны',
+    selectAllText: 'Выбрать все'});});
+    </script>
+</head>
+<body>
+<div class="container">
+{% block menu %}
+{% endblock %}
+{% block content %}
+{% endblock %}
+</div> <!-- /container -->
+{% block footer %}
+{% endblock footer %}
+</body>
+</html>

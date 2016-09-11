@@ -1,0 +1,182 @@
+' ' 
+[2016-06-25 20:32:06,280: WARNING/MainProcess] C:\Python27\lib\site-packages\celery\apps\worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2016-06-25 20:32:06,390: WARNING/MainProcess] C:\Python27\lib\site-packages\celery\fixups\django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2016-06-25 20:32:06,390: WARNING/MainProcess] celery@ilia-pc ready.
+[2016-06-25 20:32:06,969: WARNING/Worker-1] Prepare to start testing
+[2016-06-25 20:32:06,983: WARNING/Worker-1] There is no scheduled tests
+[2016-06-25 20:32:06,983: WARNING/Worker-1] Starting test request processing
+[2016-06-25 20:32:06,983: WARNING/Worker-1] Number of unprocessed test requests: 2
+[2016-06-25 20:32:07,015: WARNING/Worker-1] Created test №65
+[2016-06-25 20:32:07,062: WARNING/Worker-1] Sending results to users
+[2016-06-25 20:32:07,078: WARNING/Worker-1] Sending has completed
+[2016-06-25 20:32:07,078: WARNING/Worker-1] Prepare to start testing
+[2016-06-25 20:32:07,078: WARNING/Worker-1] Start testing
+[2016-06-25 20:32:07,125: WARNING/Worker-1] Created queue №50
+[2016-06-25 20:32:07,125: WARNING/Worker-1] Starting test request processing
+[2016-06-25 20:32:07,125: WARNING/Worker-1] Sending results to users
+[2016-06-25 20:32:07,140: WARNING/Worker-1] Number of unprocessed test requests: 2
+[2016-06-25 20:32:07,187: WARNING/Worker-1] Created test №66
+[2016-06-25 20:32:07,219: WARNING/Worker-1] Created test №67
+[2016-06-25 20:32:07,328: WARNING/Worker-1] Created queue №51
+[2016-06-25 20:32:07,344: WARNING/Worker-1] Created queue №52
+[2016-06-25 20:32:07,375: WARNING/Worker-1] Created test №68
+[2016-06-25 20:32:07,405: WARNING/Worker-1] Created test №69
+[2016-06-25 20:32:07,500: WARNING/Worker-1] Created queue №53
+[2016-06-25 20:32:07,515: WARNING/Worker-1] Created queue №54
+[2016-06-25 20:32:07,562: WARNING/Worker-1] Created test №70
+[2016-06-25 20:32:07,594: WARNING/Worker-1] Created test №71
+[2016-06-25 20:32:07,721: WARNING/Worker-1] Created queue №55
+[2016-06-25 20:32:07,746: WARNING/Worker-1] Created queue №56
+[2016-06-25 20:32:07,809: WARNING/Worker-1] Created test №72
+[2016-06-25 20:32:07,841: WARNING/Worker-1] Created test №73
+[2016-06-25 20:32:07,934: WARNING/Worker-1] Created queue №57
+[2016-06-25 20:32:07,996: WARNING/Worker-1] Created queue №58
+[2016-06-25 20:32:08,075: WARNING/Worker-1] Created test №74
+[2016-06-25 20:32:08,105: WARNING/Worker-1] Created test №75
+[2016-06-25 20:32:08,200: WARNING/Worker-1] Created queue №59
+[2016-06-25 20:32:08,230: WARNING/Worker-1] Created queue №60
+[2016-06-25 20:32:08,263: WARNING/Worker-1] Created test №76
+[2016-06-25 20:32:08,278: WARNING/Worker-1] Created test №77
+[2016-06-25 20:32:08,371: WARNING/Worker-1] Created queue №61
+[2016-06-25 20:32:08,403: WARNING/Worker-1] Created queue №62
+[2016-06-25 20:32:08,418: WARNING/Worker-1] Created test №78
+[2016-06-25 20:32:08,466: WARNING/Worker-1] Created test №79
+[2016-06-25 20:32:08,575: WARNING/Worker-1] Created queue №63
+[2016-06-25 20:32:08,591: WARNING/Worker-1] Created queue №64
+[2016-06-25 20:32:08,763: WARNING/Worker-1] Created test №80
+[2016-06-25 20:32:08,809: WARNING/Worker-1] Created test №81
+[2016-06-25 20:32:08,966: WARNING/Worker-1] Created queue №65
+[2016-06-25 20:32:08,980: WARNING/Worker-1] Created queue №66
+[2016-06-25 20:32:09,013: WARNING/Worker-1] Created test №82
+[2016-06-25 20:32:09,043: WARNING/Worker-1] Created test №83
+[2016-06-25 20:32:09,121: WARNING/Worker-1] Created queue №67
+[2016-06-25 20:32:09,138: WARNING/Worker-1] Created queue №68
+[2016-06-25 20:32:09,168: WARNING/Worker-1] Created test №84
+[2016-06-25 20:32:09,200: WARNING/Worker-1] Created test №85
+[2016-06-25 20:32:09,293: WARNING/Worker-1] Created queue №69
+[2016-06-25 20:32:09,341: WARNING/Worker-1] Created queue №70
+[2016-06-25 20:32:09,388: WARNING/Worker-1] Created test №86
+[2016-06-25 20:32:09,434: WARNING/Worker-1] Created test №87
+[2016-06-25 20:32:09,496: WARNING/Worker-1] Created queue №71
+[2016-06-25 20:32:09,528: WARNING/Worker-1] Created queue №72
+[2016-06-25 20:32:09,559: WARNING/Worker-1] Created test №88
+[2016-06-25 20:32:09,575: WARNING/Worker-1] Created test №89
+[2016-06-25 20:32:09,668: WARNING/Worker-1] Created queue №73
+[2016-06-25 20:32:09,684: WARNING/Worker-1] Created queue №74
+[2016-06-25 20:32:09,730: WARNING/Worker-1] Created test №90
+[2016-06-25 20:32:09,746: WARNING/Worker-1] Created test №91
+[2016-06-25 20:32:09,825: WARNING/Worker-1] Created queue №75
+[2016-06-25 20:32:09,871: WARNING/Worker-1] Created test №92
+[2016-06-25 20:32:09,903: WARNING/Worker-1] Created queue №76
+[2016-06-25 20:32:09,966: WARNING/Worker-1] Created test №93
+[2016-06-25 20:32:09,980: WARNING/Worker-1] Created queue №77
+[2016-06-25 20:32:10,028: WARNING/Worker-1] Created test №94
+[2016-06-25 20:32:10,075: WARNING/Worker-1] Created queue №78
+[2016-06-25 20:32:10,121: WARNING/Worker-1] Created test №95
+[2016-06-25 20:32:10,138: WARNING/Worker-1] Created queue №79
+[2016-06-25 20:32:10,184: WARNING/Worker-1] Created test №96
+[2016-06-25 20:32:10,216: WARNING/Worker-1] Created queue №80
+[2016-06-25 20:32:10,293: WARNING/Worker-1] Created test №97
+[2016-06-25 20:32:10,309: WARNING/Worker-1] Created queue №81
+[2016-06-25 20:32:10,355: WARNING/Worker-1] Created test №98
+[2016-06-25 20:32:10,388: WARNING/Worker-1] Created queue №82
+[2016-06-25 20:32:10,450: WARNING/Worker-1] Created test №99
+[2016-06-25 20:32:10,480: WARNING/Worker-1] Created queue №83
+[2016-06-25 20:32:10,528: WARNING/Worker-1] Created test №100
+[2016-06-25 20:32:10,559: WARNING/Worker-1] Created queue №84
+[2016-06-25 20:32:10,621: WARNING/Worker-1] Created test №101
+[2016-06-25 20:32:10,638: WARNING/Worker-1] Created queue №85
+[2016-06-25 20:32:10,684: WARNING/Worker-1] Created test №102
+[2016-06-25 20:32:10,716: WARNING/Worker-1] Created queue №86
+[2016-06-25 20:32:10,778: WARNING/Worker-1] Created test №103
+[2016-06-25 20:32:10,809: WARNING/Worker-1] Created queue №87
+[2016-06-25 20:32:10,855: WARNING/Worker-1] Created test №104
+[2016-06-25 20:32:10,888: WARNING/Worker-1] Created queue №88
+[2016-06-25 20:32:10,934: WARNING/Worker-1] Created test №105
+[2016-06-25 20:32:10,966: WARNING/Worker-1] Created queue №89
+[2016-06-25 20:32:11,013: WARNING/Worker-1] Created test №106
+[2016-06-25 20:32:11,028: WARNING/Worker-1] Created queue №90
+[2016-06-25 20:32:11,091: WARNING/Worker-1] Created test №107
+[2016-06-25 20:32:11,105: WARNING/Worker-1] Created queue №91
+[2016-06-25 20:32:11,184: WARNING/Worker-1] Created queue №92
+[2016-06-25 20:32:11,216: WARNING/Worker-1] Created test №108
+[2016-06-25 20:32:11,246: WARNING/Worker-1] Created test №109
+[2016-06-25 20:32:11,325: WARNING/Worker-1] Created queue №93
+[2016-06-25 20:32:11,355: WARNING/Worker-1] Created queue №94
+[2016-06-25 20:32:11,388: WARNING/Worker-1] Created test №110
+[2016-06-25 20:32:11,403: WARNING/Worker-1] Created test №111
+[2016-06-25 20:32:11,480: WARNING/Worker-1] Created queue №95
+[2016-06-25 20:32:11,513: WARNING/Worker-1] Created queue №96
+[2016-06-25 20:32:11,528: WARNING/Worker-1] Created test №112
+[2016-06-25 20:32:11,559: WARNING/Worker-1] Created test №113
+[2016-06-25 20:32:11,653: WARNING/Worker-1] Created queue №97
+[2016-06-25 20:32:11,668: WARNING/Worker-1] Created queue №98
+[2016-06-25 20:32:11,700: WARNING/Worker-1] Created test №114
+[2016-06-25 20:32:11,716: WARNING/Worker-1] Created test №115
+[2016-06-25 20:32:11,809: WARNING/Worker-1] Created queue №99
+[2016-06-25 20:32:11,841: WARNING/Worker-1] Created queue №100
+[2016-06-25 20:32:11,855: WARNING/Worker-1] Created test №116
+[2016-06-25 20:32:11,888: WARNING/Worker-1] Created test №117
+[2016-06-25 20:32:12,043: WARNING/Worker-1] Created queue №101
+[2016-06-25 20:32:12,059: WARNING/Worker-1] Created queue №102
+[2016-06-25 20:32:12,091: WARNING/Worker-1] Created test №118
+[2016-06-25 20:32:12,105: WARNING/Worker-1] Created test №119
+[2016-06-25 20:32:12,200: WARNING/Worker-1] Created queue №103
+[2016-06-25 20:32:12,216: WARNING/Worker-1] Created queue №104
+[2016-06-25 20:32:12,246: WARNING/Worker-1] Created test №120
+[2016-06-25 20:32:12,263: WARNING/Worker-1] Created test №121
+[2016-06-25 20:32:12,341: WARNING/Worker-1] Created queue №105
+[2016-06-25 20:32:12,355: WARNING/Worker-1] Created queue №106
+[2016-06-25 20:32:12,418: WARNING/Worker-1] Created test №122
+[2016-06-25 20:32:12,450: WARNING/Worker-1] Created test №123
+[2016-06-25 20:32:12,528: WARNING/Worker-1] Created queue №107
+[2016-06-25 20:32:12,543: WARNING/Worker-1] Created queue №108
+[2016-06-25 20:32:12,591: WARNING/Worker-1] Test request processing has done
+[2016-06-25 20:32:12,621: WARNING/Worker-1] Created test №124
+[2016-06-25 20:32:12,716: WARNING/Worker-1] Created queue №109
+[2016-06-25 20:32:12,763: WARNING/Worker-1] Test request processing has done
+[2016-06-25 20:32:25,335: WARNING/Worker-1] This is strange: Found animated pixels, although
+- all JavaScript animations have been stopped,
+- all animated GIF images have been hidden,
+- all elements potentially containing animation (like Java Applets, Flash Movies, videos, and iframes) are ignored.
+- all CSS animations have been paused, and
+- all CSS transitions have been disabled.
+Analysis is stopped, so you don't get false alarms.
+If you want support (or want to support FLB) please
+1.) add calls to FightingLayoutBugs.setScreenshotDir(...) and FightingLayoutBugs.enableDebugMode() to your code
+,2.) run it again, and if you get this exception again
+3.) send an email to fighting-layout-bugs@googlegroups.com with the following information:
+    - Your code.
+    - All logged output.
+    - All screenshot files (you might want to pack those into an zip archive).
+    - Which version of FLB do you use?
+    - Which version of Selenium do you use?
+    - Which browser (type and version) do you use?
+    - Which Java version do you use?
+    - Which OS (type and version)do you use?
+[2016-06-25 20:32:26,073: WARNING/Worker-1] Test status not changed. Status is 1
+[2016-06-25 20:33:02,216: WARNING/Worker-1] Sending results to users
+[2016-06-25 20:33:02,216: WARNING/Worker-1] Not all tests processed for request: 23
+[2016-06-25 20:33:02,216: WARNING/Worker-1] Not all tests processed for request: 24
+[2016-06-25 20:33:02,216: WARNING/Worker-1] Sending has completed

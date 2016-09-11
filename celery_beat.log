@@ -1,0 +1,12 @@
+' ' 
+[2016-06-25 20:31:48,079: INFO/MainProcess] beat: Starting...
+[2016-06-25 20:31:48,079: INFO/MainProcess] Writing entries...
+[2016-06-25 20:31:48,391: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2016-06-25 20:31:48,454: INFO/MainProcess] Writing entries...
+[2016-06-25 20:31:48,470: INFO/MainProcess] Scheduler: Sending due task tgiwa.tasks.start_test (tgiwa.tasks.start_test)
+[2016-06-25 20:31:48,502: INFO/MainProcess] Scheduler: Sending due task tgiwa.tasks.create_tests (tgiwa.tasks.create_tests)
+[2016-06-25 20:31:48,532: INFO/MainProcess] Scheduler: Sending due task tgiwa.tasks.send_results (tgiwa.tasks.send_results)
+[2016-06-25 20:32:00,006: INFO/MainProcess] Scheduler: Sending due task tgiwa.tasks.start_test (tgiwa.tasks.start_test)
+[2016-06-25 20:32:00,023: INFO/MainProcess] Scheduler: Sending due task tgiwa.tasks.create_tests (tgiwa.tasks.create_tests)
+[2016-06-25 20:32:00,053: INFO/MainProcess] Scheduler: Sending due task tgiwa.tasks.send_results (tgiwa.tasks.send_results)
+[2016-06-25 20:33:00,009: INFO/MainProcess] Scheduler: Sending due task tgiwa.tasks.send_results (tgiwa.tasks.send_results)

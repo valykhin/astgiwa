@@ -1,0 +1,39 @@
+{% extends 'page.html' %}
+{% load staticfiles %}
+{% load tz %}
+{% block head_ext %}
+{% endblock head_ext %}
+{% block content %}
+    <div class="jumbotron">
+        <h1>Подача заявки на тестирование</h1>
+        <p class="lead">Заполните анкету для подачи заявки на тестирование</p>
+    </div>
+    <form action="/request_for_test/create_request/" method="post">
+        {{ form.non_field_errors }}
+        {% csrf_token %}
+        <div class="page-header"><h3>Выберите браузеры для тестирования*</h3></div>
+        {{ form.browsers.errors }}
+        {{ form.browsers }}
+        <div class="page-header"><h3>Выберите разрешения экрана для тестирования*</h3></div>
+        {{ form.resolutions.errors }}
+        {{ form.resolutions }}
+        <div class="page-header"><h3>Введите адрес страницы*</h3></div>
+        {{ form.urls.errors }}
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button" onclick="add_row('{{ form.urls|escapejs }}', '{{ form.urls.auto_id }}')">Добавить строку</button>
+            </span>
+            {{ form.urls }}
+        </div>
+        <ul id="urls_list" class="list-group" name="urls">
+        </ul>
+        <div class="page-header"><h3>Введите адрес электронной почты*</h3></div>
+        {{ form.email.errors }}
+        {{ form.email }}
+        <p>
+        <p>
+            <button class="btn btn-lg btn-primary" type="submit">Подать заявку</button>
+        </p>
+        </p>
+    </form>
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block menu %}
+<div class="header clearfix">
+        <h3 class="text">AS WALT - Web Aplication Layout Testing</h3>
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" {% if request.path == None %} class="active" {% endif %}><a href="/">Главная</a></li>
+                <li role="presentation" {% if 'request_for_test' in request.path %} class="active" {% endif %}><a href="/request_for_test/">Подать заявку на тестирование</a></li>
+                <li role="presentation" {% if 'info' in request.path %} class="active" {% endif %}><a href="/info/">О системе</a></li>
+                <li role="presentation" {% if 'contacts' in request.path %} class="active" {% endif %}><a href="/contacts/">Контакты</a></li>
+                <li role="presentation" {% if 'admin' in request.path %} class="active" {% endif %}><a href="/admin/">Войти</a></li>
+            </ul>
+        </nav>
+    </div>
+{% endblock menu %}
+{% block footer %}
+    <footer class="footer">
+        <p></p>
+    </footer>
+{% endblock footer %}

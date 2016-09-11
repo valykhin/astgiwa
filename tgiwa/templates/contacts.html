@@ -1,0 +1,29 @@
+{% extends 'page.html' %}
+{% block content %}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">На тестирование страниц</div>
+    <ul class="list-group">{% for url in urls %}
+        <li class="list-group-item">{{ url }}</li>
+        {% endfor %}
+    </ul>
+    <div class="panel-heading">В конфигурациях</div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Операционная система</th>
+            <th>Браузеры</th>
+            <th>Разрешения</th>
+        </tr>
+        <tbody>
+        {% for config in test_configs %}
+        <tr>
+            <td>{{ config.browser.operating_system }}</td>
+            <td>{{ config.browser }}</td>
+            <td>{{ config.resolution }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+{% endblock content %}
